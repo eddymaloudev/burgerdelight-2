@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BurgerDelight - Vente de Hamburgers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #dc3545;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .menu-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        .carousel-inner img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">BurgerDelight</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Slider d'images -->
+    <div id="burgerCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_960_720.jpg" class="d-block w-100" alt="Hamburger classique">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_960_720.jpg" class="d-block w-100" alt="Hamburger bacon">
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2016/03/09/15/10/burger-1246521_960_720.jpg" class="d-block w-100" alt="Hamburger végétarien">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#burgerCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#burgerCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Suivant</span>
+        </button>
+    </div>
+
+    <!-- Section de menu -->
+    <div class="container mt-5" id="menu">
+        <h2 class="text-center">Notre Menu</h2>
+        <div class="row mt-4">
+            <div class="col-md-4 menu-item">
+                <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_960_720.jpg" alt="Hamburger classique">
+                <h3>Hamburger Classique</h3>
+                <p>Un hamburger juteux avec fromage, laitue, et tomate.</p>
+                <p><strong>8,99€</strong></p>
+                <button class="btn btn-danger">Commander</button>
+            </div>
+            <div class="col-md-4 menu-item">
+                <img src="https://cdn.pixabay.com/photo/2014/10/23/18/05/burger-500054_960_720.jpg" alt="Hamburger Bacon">
+                <h3>Hamburger Bacon</h3>
+                <p>Ajoutez une touche croustillante avec notre bacon fumé.</p>
+                <p><strong>10,99€</strong></p>
+                <button class="btn btn-danger">Commander</button>
+            </div>
+            <div class="col-md-4 menu-item">
+                <img src="https://cdn.pixabay.com/photo/2016/03/09/15/10/burger-1246521_960_720.jpg" alt="Hamburger Végétarien">
+                <h3>Hamburger Végétarien</h3>
+                <p>Un choix délicieux pour les végétariens, avec un steak de soja.</p>
+                <p><strong>9,99€</strong></p>
+                <button class="btn btn-danger">Commander</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section à propos -->
+    <div class="container mt-5" id="about">
+        <h2 class="text-center">À propos de nous</h2>
+        <p class="text-center">BurgerDelight est une entreprise familiale dédiée à offrir les hamburgers les plus délicieux, préparés avec des ingrédients frais et locaux. Nous mettons l'accent sur la qualité et le goût pour satisfaire tous nos clients.</p>
+    </div>
+
+    <!-- Section contact -->
+    <div class="container mt-5" id="contact">
+        <h2 class="text-center">Nous Contacter</h2>
+        <form class="mt-4">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="name" placeholder="Votre nom">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Votre email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Votre message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-danger">Envoyer</button>
+        </form>
+    </div>
+
+    <!-- Pied de page -->
+    <footer class="footer">
+        <p>&copy; 2024 BurgerDelight - Tous droits réservés.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
